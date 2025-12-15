@@ -1,0 +1,84 @@
+================================================================================
+                    MySweetHome - Kullanıcı Kılavuzu
+================================================================================
+
+1. GİRİŞ
+--------
+MySweetHome, evinizi akıllı bir şekilde yönetmenizi sağlayan bir otomasyon
+sistemidir. Bu kılavuz, sistemin kurulumu ve kullanımı hakkında bilgi içerir.
+
+2. SİSTEM GEREKSİNİMLERİ
+------------------------
+- İşletim Sistemi: Linux, Windows veya macOS
+- Derleyici: C++17 destekli (GCC 7+, Clang 5+, MSVC 2017+)
+- CMake: 3.16 veya üzeri
+
+3. KURULUM
+----------
+a) Kaynak kodları indirin
+b) Terminal/komut satırını açın
+c) Proje dizinine gidin
+d) Aşağıdaki komutları çalıştırın:
+   $ mkdir build && cd build
+   $ cmake ..
+   $ make
+   $ ./MySweetHome
+
+4. ANA MENÜ
+-----------
+Program başlatıldığında ana menü görüntülenir:
+
+[1] Cihazları Listele
+[2] Cihaz Ekle
+[3] Cihaz Kaldır
+[4] Cihaz Durumunu Değiştir
+[5] Sistem Modunu Değiştir
+[6] Logları Görüntüle
+[7] Ayarlar
+[0] Çıkış
+
+5. CİHAZ YÖNETİMİ
+-----------------
+5.1 Desteklenen Cihazlar:
+    - Işıklar (Light)
+    - Kameralar (Camera)
+    - Duman Dedektörleri (Smoke Detector)
+    - Gaz Dedektörleri (Gas Detector)
+    - Televizyonlar (TV)
+    - Alarmlar (Alarm)
+
+5.2 Cihaz Ekleme:
+    Ana menüden [2] seçeneğini seçin ve yönergeleri takip edin.
+
+5.3 Cihaz Kontrolü:
+    Her cihaz açılabilir, kapatılabilir ve özel ayarları yapılabilir.
+
+6. SİSTEM MODLARI
+-----------------
+- Normal Mod: Standart çalışma modu
+- Gece Modu: Düşük ışık, sessiz bildirimler
+- Tatil Modu: Güvenlik artırılmış, simülasyon aktif
+- Enerji Tasarrufu: Minimum güç tüketimi
+
+7. LOGLAMA
+----------
+Tüm sistem olayları otomatik olarak kaydedilir. Loglar 'logs/' dizininde
+saklanır ve ana menüden görüntülenebilir.
+
+8. SORUN GİDERME
+----------------
+S: Program başlamıyor
+C: Derleme hatalarını kontrol edin, gerekli kütüphanelerin yüklü olduğundan
+   emin olun.
+
+S: Cihaz eklenemiyor
+C: Maksimum cihaz sayısına ulaşılmış olabilir veya cihaz ID'si zaten
+   kullanılıyor olabilir.
+
+9. İLETİŞİM
+-----------
+Sorularınız için: support@mysweethome.example.com
+
+================================================================================
+                              Sürüm 1.0.0
+================================================================================
